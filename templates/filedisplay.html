@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Images Application</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<link rel="stylesheet" href="stylesheets/style.css" />-->
+</head>
+<body >
+{% for image in result %}
+<figure>
+	
+	<p>{{image['file']}}</p>
+	<p>Time taken : {{image['time']}}</p>
+	<p>________________________________________________________________</p>
+	
+</figure>
+{% endfor %}
+<p>Total time {{time}}</p>
+</body>
+</html>
